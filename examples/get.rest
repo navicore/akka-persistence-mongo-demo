@@ -1,0 +1,16 @@
+# STAR HERE and create your fist db entry
+http://localhost:8000
+Content-Type: application/json; charset=utf-8
+POST /api/assessment
+{"name": "two", "value": 2223.12}
+
+# Get the last update to named assessment
+http://localhost:8000
+Content-Type: application/json; charset=utf-8
+GET /api/assessment/one
+
+# Delete by name
+http://localhost:8000
+Content-Type: application/json; charset=utf-8
+DELETE /api/assessment/one
+
